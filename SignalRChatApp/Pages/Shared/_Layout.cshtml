@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SignalR</title>
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .chat-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+            .chat-container .chat-messages {
+                height: 550px;
+                overflow-y: scroll;
+            }
+
+            .chat-container .message {
+                margin-bottom: 10px;
+            }
+
+                .chat-container .message .user {
+                    font-weight: bold;
+                }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.13/signalr.min.js"></script>
+</head>
+<body>
+    <div class="container chat-container">
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - SignalRChatApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+</body>
+</html>
