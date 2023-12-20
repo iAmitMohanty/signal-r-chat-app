@@ -1,4 +1,4 @@
-# SignalR Chat App - .Net Core
+# SignalR Chat Application - .Net Core 7
 
 Real-time communication has become an essential aspect of modern web applications. SignalR is a real-time communication library for ASP.NET Core. This project showcases a real-time chat application developed using SignalR and .NET Core 7, enabling instant messaging and communication between multiple users in a web-based environment.
 
